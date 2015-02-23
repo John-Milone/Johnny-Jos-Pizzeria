@@ -217,7 +217,7 @@ body {
 .pizza-size-inline-fixed-width {
 	float: left;
 	display: block;
-	width: 60px;
+	width: 54px;
 }
 .knot-name, .side-name, .stromboli-name, .beverage-name {
 	font-family: 'BebasNeue';
