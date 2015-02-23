@@ -318,6 +318,43 @@ sup {
 	font-size: 0.875em;
 	margin-bottom: 7px;
 }
+.specials-menu {
+	text-align: center;
+}
+#specials-cell {
+	text-align: center;
+}
+#specials-outer-container {
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: solid 3px green;
+	border-bottom: solid 3px green;
+	border-right: solid 3px green;
+	padding: 0px 3px 3px 3px;
+	margin-bottom: 4px;
+}
+#specials-inner-container {
+	border-left: solid 3px red;
+	border-bottom: solid 3px red;
+	border-right: solid 3px red;
+}
+.specials-section {
+	font-family: 'BebasNeue';
+	font-size: 1.5em;
+}
+.specials-days, .specials-detail {
+	font-family: 'BebasNeue';
+	font-size: 0.875em;
+}
+.specials-times {
+	font-family: 'TypoSlabserif-Light';
+	font-weight: bold;
+}
+
+
+
+
 
 
 /* pad the 'buy the slice' box on the bottom to give room before the next row */
