@@ -1,0 +1,515 @@
+﻿/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+	
+	*
+	*
+	*
+
+
+
+	*
+	*
+	*
+	
+	
+	
+	
+	
+	
+	
+	*/
+
+@font-face {
+	font-family: 'TypoSlabserif-Light';
+	src: url('../fonts/TypoSlabserif-Light.eot');
+	src: url('../fonts/TypoSlabserif-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TypoSlabserif-Light.woff2') format('woff2'),
+		url('../fonts/TypoSlabserif-Light.woff') format('woff'),
+		url('../fonts/TypoSlabserif-Light.ttf') format('truetype'),
+		url('../fonts/TypoSlabserif-Light.svg#TypoSlabserif-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'HandOfSean';
+	src: url('../fonts/HandOfSean.eot');
+	src: url('../fonts/HandOfSean.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HandOfSean.woff2') format('woff2'),
+		url('../fonts/HandOfSean.woff') format('woff'),
+		url('../fonts/HandOfSean.ttf') format('truetype'),
+		url('../fonts/HandOfSean.svg#HandOfSean') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/BebasNeue.eot');
+	src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeue.woff2') format('woff2'),
+		url('../fonts/BebasNeue.woff') format('woff'),
+		url('../fonts/BebasNeue.ttf') format('truetype'),
+		url('../fonts/BebasNeue.svg#BebasNeue') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'BebasKai';
+	src: url('../fonts/BebasKai.eot');
+	src: url('../fonts/BebasKai.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasKai.woff2') format('woff2'),
+		url('../fonts/BebasKai.woff') format('woff'),
+		url('../fonts/BebasKai.ttf') format('truetype'),
+		url('../fonts/BebasKai.svg#BebasKai') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'TypoSlabserif-Light';
+	font-size: larger;
+}
+#logo {
+	width: 100%;
+	margin-bottom: 20px; 
+}
+.home-right-column {
+	text-align: center;
+}
+.promo-medium, .promo-medium-plus, .promo-large {
+	font-family: 'BebasKai';
+	font-weight: bold;
+}
+.promo-medium {
+	font-size: 1.75em;
+}
+.promo-medium-plus {
+	font-size: 1.95em;
+}
+.promo-large {
+	font-size: 2.5em;
+}
+#hours {
+	font-family: 'BebasNeue';
+	font-size: 1.75em;
+}
+#contact {
+	text-align: center;
+	font-weight: bold;
+}
+#slogan {
+	font-family: 'HandOfSean';
+	font-size: 1.75em;
+}
+.pizza-name {
+	font-family: 'BebasNeue';
+	font-size: 1.25em;
+	margin-right: -6px;
+}
+.pizza-description {
+	font-size: 0.75em;
+}
+.pizza-size-inline-fixed-width {
+	float: left;
+	display: block;
+	width: 60px;
+}
+
+sup {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.3em;
+}
+/* the two price columns */
+.bold-price, table .pizza td:first-child + td, table .pizza td:first-child + td + td {
+	font-weight: bold;
+}
+
+.container .pizza tr td:first-child {
+	line-height: 0.9;
+}
+.container table {
+	width: 100%;
+}
+
+.container table th {
+	background-color: black;
+	padding-left: 8px;
+	color: white;
+}
+.container table tbody.pizza td {
+	text-align: right;
+	padding: 7px;
+}
+.container table td, .container table th {
+	vertical-align: top;
+}
+.container table .ingredients {
+	text-align: left;
+	font-size: 0.875em;
+}
+.container footer {
+	font-style: italic;
+	font-size: 0.875em;
+}
+#upcharge20 {
+	font-family: 'BebasNeue';
+	font-size: 1.25em;
+	color: red;
+	text-align: center;
+	padding: 14px;
+}
+#buy-the-slice-green-border {
+	border: solid green 3px;
+	padding: 3px;
+	text-align: center;
+}
+#buy-the-slice-red-border {
+	border: solid red 3px;
+	padding: 10px;
+	text-align: center;	
+}
+#buy-the-slice-inline-content {
+	display: inline-block;
+	text-align: left;
+}
+#buy-the-slice-description {
+	margin: initial;
+	margin-top: 8px;
+}
+.menu-section {
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+#pricing-notice { 
+	color: green;
+	font-style: italic;
+	padding-top:20px;
+	padding-right: 75px;
+	padding-bottom: 20px;
+}
+#knots-description {
+	text-transform: uppercase;
+}
+
+
+/* pad the 'buy the slice' box on the bottom to give room before the next row */
+@media screen and (max-width: 992px) {
+	#stone-oven-pizzas {
+		margin-bottom: 15px;
+	}
+}
+
+
+
+
+
+/* RESPONSIVE GOOGLE MAPS
+http://www.labnol.org/internet/embed-responsive-google-maps/28333/ 
+*/
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	max-height: 606px !important;
+}
+
+/**
+	
+	
+	
+	
+	
+	*
+	*
+	*
+
+
+	*
+	*
+	*
+	
+	*
+	*
+	*
+	
+	
+	
+	*/
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+	/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+	.visuallyhidden.focusable:active,
+	.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster:
+								   http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+		a[href]:after {
+			content: " (" attr(href) ")";
+		}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links that are fragment identifiers,
+	 * or use the `javascript:` pseudo protocol
+	 */
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+	 * Printing Tables:
+	 * http://css-discuss.incutio.com/wiki/Printing_Tables
+	 */
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
