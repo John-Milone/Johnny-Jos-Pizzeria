@@ -170,6 +170,10 @@ body {
 	font-family: 'TypoSlabserif-Light';
 	font-size: larger;
 }
+.navbar, .navbar-brand {
+	font-family: 'BebasNeue';
+	font-size: 1.5em;
+}
 #logo {
 	width: 100%;
 	margin-bottom: 20px; 
@@ -213,6 +217,7 @@ body {
 .knot-description  {
 	font-size: 0.75em;
 	clear: both;
+	line-height: initial;
 }
 .pizza-size-inline-fixed-width {
 	float: left;
@@ -229,11 +234,8 @@ body {
 	width: 50px;
 	padding-top: 3px;
 }
-.knot-name {
+.knot-name, .side-name {
 	width: 150px;
-}
-.side-name {
-	width: 100px;
 }
 .knot-name, .knot-price, .side-name, .side-price {
 	margin-top: 10px;
@@ -270,7 +272,7 @@ sup {
 }
 .container table .ingredients {
 	text-align: left;
-	font-size: 0.85em;
+	font-size: 0.86em;
 }
 .container footer {
 	font-style: italic;
@@ -332,7 +334,7 @@ sup {
 	border-bottom: solid 3px green;
 	border-right: solid 3px green;
 	padding: 0px 3px 3px 3px;
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 }
 #specials-inner-container {
 	border-left: solid 3px red;
@@ -359,7 +361,7 @@ sup {
 }
 .stromboli-name, .beverage-name {
 	float: left;
-	width: 175px;
+	width: 200px;
 	margin-top: 10px;
 }
 
