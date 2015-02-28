@@ -375,7 +375,14 @@ sup {
 .navbar div {
 	vertical-align: middle;
 }
-
+#location-page #location-message {
+	font-weight: bold;
+}
+#location-page #location-address, #location-page #location-hours {
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+}
 
 /* pad the 'buy the slice' box on the bottom to give room before the next row */
 @media screen and (max-width: 992px) {
@@ -400,13 +407,18 @@ sup {
 		font-size: 1em;
 	}
 }
+@media screen and (max-width: 330px) {
+	.promo-medium {
+		font-size: 1.65em;
+	}
+}
 
 
 
 
 /* RESPONSIVE GOOGLE MAPS
 http://www.labnol.org/internet/embed-responsive-google-maps/28333/ 
-*/
+
 .google-maps {
 	position: relative;
 	padding-bottom: 75%;
@@ -420,7 +432,7 @@ http://www.labnol.org/internet/embed-responsive-google-maps/28333/
 	width: 100% !important;
 	max-height: 606px !important;
 }
-
+*/
 /**
 	
 	
