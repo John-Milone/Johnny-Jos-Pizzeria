@@ -174,6 +174,7 @@ body {
 	font-family: 'BebasNeue';
 	font-size: 1.5em;
 }
+
 #logo {
 	width: 100%;
 	margin-bottom: 20px; 
@@ -364,9 +365,16 @@ sup {
 	width: 200px;
 	margin-top: 10px;
 }
-
-
-
+#social a {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#social img {
+	width: 52px;
+}
+.navbar div {
+	vertical-align: middle;
+}
 
 
 /* pad the 'buy the slice' box on the bottom to give room before the next row */
@@ -375,7 +383,23 @@ sup {
 		margin-bottom: 15px;
 	}
 }
-
+/* brand label and collapsible menu collide */
+@media screen and (max-width: 405px) {
+	.navbar-brand {
+		font-size: 1.2em;
+	}
+}
+@media screen and (max-width: 360px) {
+	#hours {
+		font-size: 1.55em;
+	}
+}
+/* brand label and collapsible menu collide again */
+@media screen and (max-width: 350px) {
+	.navbar-brand {
+		font-size: 1em;
+	}
+}
 
 
 
