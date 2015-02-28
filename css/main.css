@@ -418,7 +418,7 @@ sup {
 
 /* RESPONSIVE GOOGLE MAPS
 http://www.labnol.org/internet/embed-responsive-google-maps/28333/ 
-
+*/
 .google-maps {
 	position: relative;
 	padding-bottom: 75%;
@@ -432,7 +432,7 @@ http://www.labnol.org/internet/embed-responsive-google-maps/28333/
 	width: 100% !important;
 	max-height: 606px !important;
 }
-*/
+
 /**
 	
 	
