@@ -387,7 +387,14 @@ sup {
 	margin-right: 20px;
 	font-weight: bold;
 }
-
+#map-container {
+	height: 100%;
+}
+#map-container iframe {
+	height: 100%;
+	display: block;
+	width: 100%;
+}
 /* pad the 'buy the slice' box on the bottom to give room before the next row */
 @media screen and (max-width: 992px) {
 	#stone-oven-pizzas {
@@ -413,17 +420,8 @@ sup {
 }
 @media screen and (max-width: 330px) {
 	.promo-medium {
-		font-size: 1.65em;
+		font-size: 1.42em;
 	}
-}
-
-#map-container {
-	height: 100%;
-}
-#map-container iframe {
-	height: 100%;
-	display: block;
-	width: 100%;
 }
 
 /**
