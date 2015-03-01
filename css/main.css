@@ -115,6 +115,10 @@ textarea {
 	
 	*/
 
+html, body {
+	height: 100%;
+}
+
 @font-face {
 	font-family: 'TypoSlabserif-Light';
 	src: url('../fonts/TypoSlabserif-Light.eot');
@@ -413,30 +417,16 @@ sup {
 	}
 }
 
-
-
-
-/* RESPONSIVE GOOGLE MAPS
-http://www.labnol.org/internet/embed-responsive-google-maps/28333/ 
-*/
-.google-maps {
-	position: relative;
-	padding-bottom: 75%;
-	height: 0;
-	overflow: hidden;
+#map-container {
+	height: 100%;
 }
-.google-maps iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100% !important;
-	max-height: 606px !important;
+#map-container iframe {
+	height: 100%;
+	display: block;
+	width: 100%;
 }
 
 /**
-	
-	
-	
 	
 	
 	*
