@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>http://www.johnnyjospizza.com/index.html</loc>
+  </url>
+  <url>
     <loc>http://www.johnnyjospizza.com/menu.html</loc>
-    <loc>http://www.johnnyjospizza.com/location.html</loc>
+  </url>
+  <url>
+    <loc>http://www.johnnyjospizza.com/location.html</loc>  
   </url>
 </urlset>
